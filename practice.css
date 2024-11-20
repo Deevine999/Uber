@@ -1,0 +1,350 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a, ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 10%;
+}
+nav .nav__1{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+nav .nav__1 .logo{
+    font-size: 2em;
+    color: white;
+}
+nav .nav__1 ul{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+nav .nav__1 ul li a{
+    color: white;
+    font-size: 1.1em;
+}
+nav .nav__2 ul{
+   display: flex;
+   align-items: center;
+   gap: 1em; 
+}
+nav .nav__2 ul li a{
+    color: white;
+    font-size: 1.1em;
+}
+nav .nav__2 ul li a:nth-child(1) i{
+    padding-right: 0.5em;
+}
+nav ul li:hover{
+    background-color: rgba(255, 255, 255, 0.288);
+}
+nav ul li {
+    padding: 12px 18px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+nav .nav__2 ul li:nth-child(4) {
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+nav .nav__2 ul li:nth-child(4) a{
+    color: black !important;
+}
+nav .nav__2 ul li:nth-child(4):hover{
+    background-color: rgba(255, 255, 255, 0.96);
+}
+
+.root--root{
+    background-color: white;
+    padding: 0 14%;
+}
+.section__1{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 6em 0;
+}
+.section__1 > div{
+    width: 50%;
+}
+.section__1 .main__1 h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+.section__1 .main__1 form input{
+    width: 90%;
+    padding: 0.6em 1em;
+    font-size: 1em;
+    background-color: rgb(239, 239, 239);
+    border: none;
+    margin-bottom: 0.5em;
+    border-radius: 8px;
+}
+.section__1 .main__1 form input::placeholder{
+    font-size: 1.2em;
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+}
+.section__1 .main__1 form{
+    width: 65%;
+}
+.section__1 .main__1 form >a{
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    padding: 15px 25px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-top: 1em;
+}
+.section__1.main__2 iframe{
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+    border: 10px solid rgba(211, 211, 211, 0.453) !important;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.161);    
+}
+.section__2{
+    padding: 1em 10%;
+}
+.section__2 h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.section__2 > .suggestion-ride{
+    background-color: rgb(240, 230, 230);
+    display: inline-block;
+    padding: 2em 1em;
+    border-radius: 10px;
+    background-image: url(./images/ride.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+.section__2 > .suggestion-ride p{
+    line-height: 1.5;
+    font-size: 0.9em;
+    margin: 0.8em 0;
+}
+.section__2 > .suggestion-ride a{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 8px 18px;
+    box-sizing: 100px;
+}
+.section__2 .suggestion-package{
+    background-color: rgb(240, 230, 230);
+    display: inline-block;
+    padding: 2em 1em;
+    border-radius: 10px;
+    background-image: url(./images/connect.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+.section__2 .suggestion-package p{
+    line-height: 1.5;
+    font-size: 0.9em;
+    margin: 0.8em 0;
+}
+.section__2 .suggestion-package a{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 8px 18px;
+    box-sizing: 100px;
+}
+.section__2 .suggestion-reserve{
+    background-color: rgb(240, 230, 230);
+    display: inline-block;
+    padding: 2em 1em;
+    border-radius: 10px;
+    background-image: url(./images/reserve_clock.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 10em;
+    background-position-y: center;
+}
+.section__2 .suggestion-reserve p{
+    line-height: 1.5;
+    font-size: 0.9em;
+    margin: 0.8em 0;
+}
+.section__2 .suggestion-reserve a{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 8px 18px;
+    box-sizing: 100px;
+}
+.section__3{
+    display: flex;
+    align-items: center;
+    margin-top: 9em;
+    justify-content: space-between;
+    padding: 1em 10%;
+}
+.section__3 > div{
+    width: 43%;
+}
+.section__3 > .section__3-img{
+    background-image: url(./images/uber\ car.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    height: 500px;
+}
+.section__3 .drive-1 h1{
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.section__3 > .drive-1 p{
+    line-height: 1.5;
+    margin: 1.5em 0;
+    font-size: 1.1em;
+    width: 80%;
+}
+.section__3 > .drive-1 > .section__3-content-btn{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+.section__3-content-btn a:nth-child(1){
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    padding: 15px 25px;
+    border-radius: 7px;
+    display: inline-block;
+}
+.section__3-content-btn a:nth-child(2){
+    color: grey;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.section__3-content-btn a:nth-child(2):hover{
+    color: black;
+    border-bottom: none;
+}
+.section__4{
+    display: flex;
+    align-items: center;
+    margin-top: 9em;
+    justify-content: space-between;
+    padding: 1em 10%;
+}
+.section__4 > div{
+    width: 43%;
+}
+.section__4 .drive-2 h1{
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.section__4 > .drive-2 p{
+    line-height: 1.5;
+    margin: 1.5em 0;
+    font-size: 1.1em;
+    width: 80%;
+}
+.section__4 > .drive-2 > .section__4-btn{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+.section__4-btn a:nth-child(1){
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    padding: 15px 25px;
+    border-radius: 7px;
+    display: inline-block;
+}
+.section__4-btn a:nth-child(2){
+    color: grey;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.section__4-btn a:nth-child(2):hover{
+    color: black;
+    border-bottom: none;
+}
+.section__4 > .section__4-img{
+    background-image: url(./images/u4b-square.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    height: 500px;
+}
+.section__5{
+    background-color: rgba(128, 128, 128, 0.24);
+    padding: 3.5em 10px;
+}
+.section__5{
+    padding: 1em 10%;
+}
+.section__5-qr-code{
+    display: flex;
+    justify-content: space-between;
+}
+.section__5-qr-code > section{
+    width: 49%;
+    background-color: white;
+    margin-top: 1.5em;
+    padding: 2em 2em;
+    align-items: center;
+    display: flex;
+    gap: 2em;
+}
+.section__5 h1{
+    font-size: 2em;
+}
+.section__5-qr-code > section .qr-code-img{
+    width: 120px;
+    height: 120px;
+    background-image: url(./images/Final-Download-Uber-App.webp);
+    background-size: cover;
+    background-position: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 4em;
+}
+footer .link{
+    margin: 4em 0em;
+    display: flex;
+    justify-content: flex-start;
+    gap: 12em;
+}
+footer .link a{
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+}
+footer .link div h4{
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+footer header a{
+    color: white;
+    display: inline-block;
+    padding-bottom: 30px;
+}
+footer header a:hover{
+    text-decoration: underline;
+}
